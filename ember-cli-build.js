@@ -8,6 +8,10 @@ module.exports = function(defaults) {
     // Add options here
     'ember-bootstrap': {
       'importBootstrapTheme': true
+    },
+    favicon: {
+      config: {
+      }
     }
   });
 
