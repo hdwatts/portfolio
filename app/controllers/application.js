@@ -14,10 +14,6 @@ export default Ember.Controller.extend({
               _this.toggleProperty('sideSidebarCollapse');
               x.slideUp();
             });
-            $(".custom-collapse").click(function(e) {
-              e.stopPropagation();
-              return false;
-            });
         });
       }
     }
