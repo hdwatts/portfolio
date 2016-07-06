@@ -1,0 +1,48 @@
+{{#bs-nav class="navbar navbar-custom navbar-fixed-top" role="navigation"}}
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" {{action "toggleSidebarCollapse"}}>
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      {{#link-to 'about' class="navbar-brand"}}HDWatts{{/link-to}}
+    </div>
+
+    {{#bs-collapse class="collapse navbar-collapse" id="custom-collapse" collapsed=true}}
+      <ul class="nav navbar-nav navbar-right">
+        {{#bs-nav-item}}
+          {{#link-to 'about' action="toggleSidebarCollapse"}}About{{/link-to}}
+        {{/bs-nav-item}}
+        {{#bs-nav-item}}
+          {{#link-to 'work'}}Work{{/link-to}}
+        {{/bs-nav-item}}
+        {{#bs-nav-item}}
+          {{#link-to 'projects'}}Projects{{/link-to}}
+        {{/bs-nav-item}}
+        {{#bs-nav-item}}
+          {{#link-to 'blog'}}Blog{{/link-to}}
+        {{/bs-nav-item}}
+      </ul>
+    {{/bs-collapse}}
+  </div>
+{{/bs-nav}}
+
+<section class="module p-t-0 p-b-0" data-background="assets/images/section-4.jpg">
+
+  <div class="container-fluid">
+
+    <div class="row relative">
+
+      <div class="col-sm-12 col-md-6 col-md-offset-2 col-bg">
+
+        {{liquid-outlet}}
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

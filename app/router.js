@@ -6,6 +6,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('projects');
+  this.route('work');
+  this.route('blog');
+  this.route('about', {path: '/'});
 });
 
 export default Router;
