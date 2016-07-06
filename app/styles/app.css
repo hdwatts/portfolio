@@ -45,7 +45,7 @@ small {
 
 }
 
-@media (max-width: 465px) {
+@media (max-width: 495px) {
   .dean-text {
     display:none;
   }
