@@ -3,7 +3,11 @@
     <div class="blogpost-title"><a href="{{post.url}}"><h2>{{post.title}}</h2></a></div>
     <div class="blogpost-description">{{{post.description}}}</div>
   {{else}}
-    <div class="post-title"><a href="{{post.url}}"><h2>{{post.title}}</h2></a></div>
+    {{#if post.url}}
+      <div class="post-title"><a href="{{post.url}}"><h2>{{post.title}}</h2></a></div>
+    {{else}}
+      <div class="post-title"><h2>{{post.title}}</h2></div>
+    {{/if}}
     {{#if post.image_url}}
       <a href="{{post.url}}"><div class="post-img" style="background-image: url({{post.image_url}})"></div></a>
     {{/if}}
