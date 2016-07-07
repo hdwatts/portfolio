@@ -45,6 +45,9 @@ module.exports = function(defaults) {
   app.import("vendor/fonts/linecons.woff")
 
   app.import("vendor/images/dean-greyscale.jpeg")
+  app.import("vendor/images/cocktail-cabinet.png")
+  app.import("vendor/images/open-tale.png")
+  app.import("vendor/images/flatiron-islands.png")
 
   // Use `app.import` to add additional libraries to the generated
   // output files.

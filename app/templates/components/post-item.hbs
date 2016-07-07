@@ -4,9 +4,15 @@
     <div class="blogpost-description">{{{post.description}}}</div>
   {{else}}
     <div class="post-title"><a href="{{post.url}}"><h2>{{post.title}}</h2></a></div>
-    <div class="post-title"><h3>{{post.subtitle}}</h3></div>
+    {{#if post.image_url}}
+      <a href="{{post.url}}"><div class="post-img" style="background-image: url({{post.image_url}})"></div></a>
+    {{/if}}
+
+    {{#if post.subtitle}}
+      <div class="post-title"><h3>{{post.subtitle}}</h3></div>
+    {{/if}}
     <div class="post-description">{{{post.description}}}</div>
-    <div class="tags">{{#each post.tags as |tag|}}<small>{{tag}}</small>{{/each}}</div>
+    <div class="tags"><small>Tags:</small> {{#each post.tags as |tag|}}<small>{{tag}}</small>{{/each}}</div>
   {{/if}}
   <hr>
 {{/each}}
