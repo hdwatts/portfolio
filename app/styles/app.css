@@ -42,7 +42,7 @@ small {
 }
 
 .post-img {
-  width: 300px;
+  max-width: 300px;
   height: 200px;
   background-size:cover;
   background-position: 50%;
