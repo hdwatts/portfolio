@@ -14,9 +14,9 @@ export default Ember.Route.extend({
             var post = channel.children[x];
             var title = post.children[0].textContent;
             var description = post.children[1].textContent;
-            var link = post.children[2].textContent;
+            var url = post.children[2].textContent;
             var date = post.children[5].textContent;
-            posts.push({title:title, description:description, link:link, date:date, isBlogPost:true});
+            posts.push({title:title, description:description, url:url, date:date, isBlogPost:true});
           }
         }
 
