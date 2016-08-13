@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model() {
   return $.ajax({
-    url: "http://cors.io/?u=https://medium.com/feed/@hdwatts",
+    url: "http://crossorigin.me/http://medium.com/feed/@hdwatts",
     crossDomain:true,
     dataType:"xml"
     }).then(function(jsonData){
