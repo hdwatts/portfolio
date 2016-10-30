@@ -2,7 +2,12 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return [{ title: 'EJournal Press 2015-2016',
+    return [{ title: 'StructuredWeb 2016-Present',
+              subtitle: 'Software Engineer',
+              description: 'I am currently developing features on StructuredWeb\'s platform for high profile clients such as Intel and Amazon in .NET, C#, and ColdFusion.',
+              tags: ['C#', '.NET', 'ColdFusion', 'ASP', 'jQuery', 'Oracle SQL']
+            },
+            { title: 'EJournal Press 2015-2016',
               subtitle: 'Software Development Intern',
               description: "Refactored over 75 intricate Perl subsystems to a new, more configurable system. Worked directly with clients on an intricate system with over 6,000 configuration flags. Took part in the full software development life cycle process (design, code, test, maintain).",
               tags: ['Perl,', 'jQuery,', 'JavaScript,', 'XML,', 'MSSQL,', 'AJAX']
